@@ -10,9 +10,7 @@ services:
       - ./.env
   web:
     container_name: yamdb
-    build:
-      context: ../
-      image: sasha0090/yamdb
+    image: sasha0090/yamdb
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
@@ -29,11 +27,8 @@ services:
       - "80:80"
 
     volumes:
-
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
-
-
       - media_value:/var/html/media/
 
     depends_on:

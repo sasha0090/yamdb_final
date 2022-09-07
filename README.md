@@ -1,4 +1,6 @@
-# Проект YamDB  
+# Проект YamDB
+![yamdb workflow](https://github.com/sasha0090/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Проект позволяет собирать и отзывы о различных произведениях (фильмы, книги, музыки)  
   
 ## Описание проекта  
@@ -7,9 +9,14 @@
 Приложение настроено на принципах Continuous Integration и Continuous Deployment.
 
 После пуша в main:
+
 ▶ Запуск тестов
+
 ▶ Обновление образов на Docker Hub
+
 ▶ Деплой на боевой сервер при пуше в главную ветку main.
+
+Проект доступен по адрессу: http://yamdb.sytes.net/api/v1/
 
 
 ### Регистрация пользователя  
@@ -75,7 +82,7 @@ python manage.py runserver
       dockerfile: api_yamdb/Dockerfile
 на
 
-	image: sasha0090/yamdb
+    image: sasha0090/yamdb
 
 Или можно сделать колон всего проекта и собрать самостоятельно.
 
